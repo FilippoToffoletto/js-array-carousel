@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DCE0D9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.main-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 0px;
+}
+
+.container{
+    width: 60%;
+    height: 60%;
+    background-color: #FBF6EF;
+    border-radius: 30px;
+    padding: 10px 10px;
+}
+
+.slider{
+    position: relative;
+    height: 100%;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
