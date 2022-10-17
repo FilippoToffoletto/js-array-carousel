@@ -1,6 +1,3 @@
-/* Al click dell’utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente. */
-
-
 // inserisco la banca dati che include le immagini
 const imagesArray = [
     '../img/01.jpg',
