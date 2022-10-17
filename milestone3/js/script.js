@@ -21,7 +21,6 @@ for(let i = 0; i < imagesArray.length; i++){
     imageTags += `
         <img class="item" src="${imagesArray[i]}" alt="${imagesArray[i]}" >
     `;
-    
 }
 
 let counterImages = 0;
@@ -46,8 +45,8 @@ next.addEventListener('click',function(){
 
     items[counterImages].classList.remove('active');
     counterImages++;
-    prev.classList.remove('hide');
     items[counterImages].classList.add('active');
+    prev.classList.remove('hide');
 
     if(counterImages === imagesArray.length -1){
         next.classList.add('hide');
@@ -55,12 +54,11 @@ next.addEventListener('click',function(){
 });
 
 prev.addEventListener('click', function(){
-
     
     items[counterImages].classList.remove('active');
     items[--counterImages].classList.add('active');
 
-    next.classList.add('hide');
+    next.classList.remove('hide');
 
     if(counterImages === 0){
         prev.classList.add('hide');
